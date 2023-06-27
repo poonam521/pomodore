@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" contents="width=device-width, inital-scale=1.0" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+        <!-- Bootstrap Js -->
+        <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+
+        <!-- My JS -->
+        <script src="main.js"></script>
+
+        <!-- My CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+        <!-- Google Font -->
+        <link
+            href="http://font.googleapis.com/css2?family=Pacifico&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>POMODORO</title>  
+    </head>
+    <body onload="template()">
+        <div class="container">
+            <!-- Heading -->
+            <h1 class="text-center my-5 heading">POMODORO</h1>
+
+            <!-- Main Timer -->
+            <div class="container timer">
+                <div class="row ">
+                    <div class="col-5">
+                        <h4 id="minutes"></h4>
+                    </div>
+                    <div class="col-2">
+                        <h4>:</h4>
+                    </div>
+                    <div class="col-5">
+                        <h4 id="seconds"></h4>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 id="done" class="text-center my-5"></h3>
+            </div>
+            <!-- Start and Reset Buttons -->
+            <div class="container d-flex justify-content-center align-items-center my-5"
+            >
+                <button class="btn" onclick="start()"><i class="fas fa-play fa-2x"></i></button>
+                <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+
+
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABI'S WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quotes.js"></script>
+</head>
+<body>
+    <section class="randomQuote">
+        <header>
+            <h2>Quote of the Day</h2>
+            <p>Press the below button to receive a random quote!</p>
+        </header>
+        <div class="quotesOutput">
+            <p id="generatedQuote">"The greatest glory in living lies not in never falling, but in rising every time we fall."</p>
+            <span id="AuthorName">--Nelson Mandela</span>
+        </div>
+        <button onclick="generateQoute()">New Quote</button>
+</section>
+</body>
+</html>

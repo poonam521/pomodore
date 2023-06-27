@@ -1,0 +1,91 @@
+body {
+    background: #FBD6D2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.heading{
+   color: #A63EC5; 
+}
+
+
+.row {
+    width: 100%;
+}
+
+
+.timer{
+    color: #CE49BF;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid #CE49BF;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-play, 
+.fa-redo-alt {
+    color: #F190B7 ;
+    border: 2px solid transparent;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.fa-play:hover, 
+.fa-redo-alt:hover {
+    color: #A63EC5;
+    border: 2px solid #A63EC5;
+    transition: 0.3s ease;
+}
+
+.show_message {
+    display: block;
+    padding: 1rem 0;
+    color:  #FBD6D2;
+    background:  #F190B7 ;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    text-align: center;
+    background: #4b00ff;
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.quotesOutput {
+    text-align: center;
+    background: #dde1ff;
+    padding: 20px;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #4b00ff;
+    color: #fff;
+    border: transparent;
+    margin: auto;
+    cursor: pointer;
+}
+p#generatedQuote {
+    font-size: 16px;
+    font-weight: 800;
+}
